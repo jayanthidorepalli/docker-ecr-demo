@@ -24,11 +24,11 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v2
 
       - name: Build Docker Image
-        run: docker build -t mywebsite .
+        run: docker build -t myfirstrepo .
 
       - name: Tag Image
         run: |
-          docker tag myfirstrepo:latest 676703122683.dkr.ecr.us-east-2.amazonaws.com/myfirstrepo
+          docker tag myfirstrepo:nginx_website 676703122683.dkr.ecr.us-east-2.amazonaws.com/myfirstrepo
 
       - name: Push Image
         run: |
