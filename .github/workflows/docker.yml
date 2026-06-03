@@ -24,7 +24,7 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v2
 
       - name: Build Docker Image
-        run: docker build -t myfirstrepo .
+        run: docker build -t mywebsite .
 
       - name: Tag Image
         run: |
